@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <style>
+    body{
+    font-family: Arial;
+    padding: 40px;
+    background: #f2f2f2;
+}
+
+form, body{
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea, button{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button{
+    background: black;
+    color: white;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Feedback Form</h1>
+
+<form action="/submit" method="POST">
+
+    <input type="text" name="name" placeholder="Enter Name" required>
+
+    <input type="number" name="age" placeholder="Enter Age" required>
+
+    <input type="email" name="email" placeholder="Enter Email" required>
+
+    <textarea name="feedback" placeholder="Enter Feedback" required></textarea>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
