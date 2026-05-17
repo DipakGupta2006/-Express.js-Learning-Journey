@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student registration form</title>
+    <style>
+    body{
+        font-family: Arial;
+        padding: 40px;
+        background: #f2f2f2;
+    }
+
+    form, body{
+        max-width: 500px;
+        margin: auto;
+    }
+
+    input, textarea, button{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    button{
+        background: black;
+        color: white;
+        border: none;
+    }
+    </style>
+</head>
+<body>
+
+    <form action="/submit" method="post">
+
+        Full name:
+        <input type="text" name="stud_name" placeholder="Enter your name"><br><br>
+    
+        Age: 
+        <input type="number" name="stud_age" placeholder="Enter your age"><br><br>
+    
+        Mobile Number:
+        <input type="tel" name="stud_number" placeholder="Enter your mobile number"><br><br>
+    
+        Email:
+        <input type="email" name="stud_email" placeholder="Enter your email"><br><br>
+
+        <!-- Submit: -->
+        <button type="submit">Click here to submit</button>
+    </form>
+
+
+    
+</body>
+</html>
