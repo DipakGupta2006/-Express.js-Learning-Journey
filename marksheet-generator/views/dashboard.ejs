@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <h1>Marksheet for <%= studentName %></h1>
+    <p>Roll Number: <%= rollNumber %></p>
+
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td><%= mathMarks %></td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td><%= scienceMarks %></td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td><%= englishMarks %></td>
+        </tr>
+    </table>
+    <p>Total: <%= total %></p>
+    <p>Percentage: <%= percentage.toFixed(2) %>%</p>
+    <p>Grade: <%= grade %></p>
+    <p>Status: <%= passFail %></p>
+
+</body>
+</html>
