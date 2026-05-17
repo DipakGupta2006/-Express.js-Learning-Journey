@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+
+<style>
+body { margin:0; font-family:Arial; background:#0a0a0f; color:white;}
+nav { padding:15px 40px; background:#111; }
+nav a { color:white; margin:0 10px; text-decoration:none; }
+
+.form {
+  padding:80px;
+}
+input, textarea {
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+button {
+  padding:10px;
+  background:gold;
+  border:none;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/service">Services</a>
+  <a href="/contact">Contact</a>
+</nav>
+
+<div class="form">
+  <h1>Contact Us</h1>
+
+  <input type="text" placeholder="Name">
+  <input type="email" placeholder="Email">
+  <textarea placeholder="Message"></textarea>
+
+  <button onclick="submitForm()">Send</button>
+
+  <p id="msg"></p>
+</div>
+
+<script>
+function submitForm() {
+  document.getElementById("msg").innerText = "Message Sent!";
+}
+</script>
+
+</body>
+</html>
