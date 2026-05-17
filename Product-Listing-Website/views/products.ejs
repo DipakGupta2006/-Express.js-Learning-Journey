@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+</head>
+<body>
+    <h1>All Products</h1>
+
+    <br><br>
+    <% for(let i = 0; i < products.length; i++) { %>
+
+        <div>
+            <h2><%= products[i].name %></h2>
+            <p>Price: $<%= products[i].price %></p>
+            <p>Description: <%= products[i].description %></p>
+        </div>
+        <hr>
+    <% } %>
+
+
+    
+</body>
+</html>
